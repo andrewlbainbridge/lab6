@@ -748,6 +748,8 @@ void render()
 	ggprint8b(&r, 16, 0x00ffff00, "n asteroids destroyed: ");
 	extern void showName(Rect r, int x, int c);
 	showName(r,100,100);
+	extern void drawBox(int,int);
+	drawBox(gl.xres/2,gl.yres/2);
 	//
 	//-------------
 	//Draw the ship
